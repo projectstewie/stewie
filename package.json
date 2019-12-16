@@ -1,0 +1,14 @@
+{
+  "name": "stewie",
+  "version": "1.0.0",
+  "description": "A marketplace for buying and selling kids items",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nimish Parmar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
