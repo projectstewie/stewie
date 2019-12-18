@@ -1,14 +1,22 @@
 {
   "name": "stewie",
-  "version": "1.0.0",
-  "description": "A marketplace for buying and selling kids items",
-  "main": "app.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "author": "Nimish Parmar",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "helmet": "^3.21.2",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "passport": "^0.4.1",
+    "pg": "^7.14.0",
+    "pg-hstore": "^2.3.3",
+    "rate-limiter-flexible": "^1.2.0",
+    "sequelize": "^5.21.3"
   }
 }

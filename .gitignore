@@ -1,0 +1,2 @@
+# Dont commit the node_modules dir - only use package.json and package-lock.json
+node_modules
