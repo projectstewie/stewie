@@ -17,12 +17,13 @@ module.exports = (sequelize, DataTypes) => {
     // associations can be defined here
     User.hasMany(models.Item, {
       foreignKey: 'userId',
-      as: 'user_id',
+      sourceKey: 'id',
       onDelete: 'CASCADE',
     });
 
     User.hasMany(models.Listing, {
       foreignKey: 'userId',
+      sourceKey: 'id',
       as: 'seller_id',
       onDelete: 'CASCADE',
     });

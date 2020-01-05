@@ -23,11 +23,7 @@ module.exports = {
         allowNull: false,
         type: Sequelize.ENUM('New','Like new','Good','Fair','Poor')
       },
-      categoryId: {
-        allowNull: false,
-        type: Sequelize.INTEGER
-      },
-      userId: {
+      user_id: {
         allowNull: false,
         type: Sequelize.INTEGER
       },

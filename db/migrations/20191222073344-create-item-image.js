@@ -8,11 +8,11 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      imageUrl: {
+      image_url: {
         allowNull: false,
         type: Sequelize.STRING
       },
-      itemId: {
+      item_id: {
         allowNull: false,
         type: Sequelize.INTEGER
       },

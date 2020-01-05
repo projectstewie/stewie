@@ -23,6 +23,11 @@ module.exports = (sequelize, DataTypes) => {
       onDelete: 'CASCADE',
     });
 
+    Item.hasMany(models.ListingItem, {
+      foreignKey: 'itemId',
+      as: 'item_id',
+      onDelete: 'CASCADE',
+    });
   };
   return Item;
 };

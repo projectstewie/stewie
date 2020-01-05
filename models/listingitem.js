@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
       onDelete: 'CASCADE',
     });
 
-    ListingItem.belongsTo(models.Item, {
+    ListingItem.hasOne(models.Item, {
       foreignKey: 'ItemId',
       as: 'item_id',
       onDelete: 'CASCADE',
