@@ -1,2 +1,2 @@
-# Project Stewie
-_A marketplace for buying and selling kids items_
+# Stewie
+_Frontend for Project Stewie - A marketplace for buying and selling kids items_
