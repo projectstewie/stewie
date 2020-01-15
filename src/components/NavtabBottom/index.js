@@ -9,7 +9,7 @@ const NavtabBottom = () => (
         <div className="container">
           <ul className="site-menu js-clone-nav d-none d-md-block">
             <li className="has-children active">
-              <a href="index.html">BUY</a>
+              <a href="/listings">BUY</a>
               <ul className="dropdown">
                 <li><a href="#">Clothing and Accessories</a></li>
                 <li><a href="#">Bath and Potty</a></li>
