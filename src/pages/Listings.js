@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import NavtabTop from "../components/NavtabTop";
 import NavtabBottom from "../components/NavtabBottom";
 import Footer from "../components/Footer";
+import Listing from "../components/Listing";
+import Sort from "../components/Sort";
 import "../App.css";
 
 class Home extends Component {
@@ -17,7 +19,8 @@ class Home extends Component {
             <div >
                 <NavtabTop />
                 <NavtabBottom />
-                
+                <Sort />
+                <Listing />          
                 <Footer />
             </div>
 
