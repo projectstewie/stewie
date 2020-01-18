@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import NavtabTop from "./components/NavtabTop";
-import NavtabBottom from "./components/NavtabBottom";
-import HeroImage from "./components/HeroImage";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import NavtabTop from "./components/NavtabTop";
+// import NavtabBottom from "./components/NavtabBottom";
+// import HeroImage from "./components/HeroImage";
+// import Footer from "./components/Footer";
+// import Listings from "./components/Listings";
+import Home from "./pages/Home";
+import Listings from "./pages/Listings";
 import './App.css';
 
 class App extends Component {
 
   state = {
-   
+
   }
 
   componentDidMount() {
@@ -19,27 +22,17 @@ class App extends Component {
   render() {
     console.log("Hey this works")
     return (
-      // <Router>
+      <Router>
         <div>
-          <NavtabTop />
-          <NavtabBottom />
-          <HeroImage />
-          <Footer />
 
-          {/* <Switch>
-            <Route exact path="/" component={Signup} />
-            <Route exact path="/signup" component={Signup} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/home" render={(props) => <Home {...props} handleLinkClick={this.handleLinkClick} />} />
+          <Switch>
 
-            <div className="grid">
-              <Route exact path="/employees" render={(props) => <Employees {...props} handleLinkClick={this.handleLinkClick} currentEmployeeId={this.state.currentEmployeeId} />} />
-              <Route path={"/employees/" + this.state.currentEmployeeId} render={(props) => <Info {...props} handleLinkClick={this.handleLinkClick} currentEmployeeId={this.state.currentEmployeeId} />} />
-            </div>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/listings" component={Listings} />
 
-          </Switch> */}
+          </Switch>
         </div>
-      // </Router>
+      </Router>
     )
   }
 }
