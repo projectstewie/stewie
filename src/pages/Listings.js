@@ -5,9 +5,11 @@ import NavtabBottom from "../components/NavtabBottom";
 import Footer from "../components/Footer";
 import Listing from "../components/Listing";
 import Sort from "../components/Sort";
+import Categories from "../components/Categories";
+import Filter from "../components/Filter";
 import "../App.css";
 
-class Home extends Component {
+class Listings extends Component {
     // state = {
     //     loggedIn: false,
     //     loading: true
@@ -20,6 +22,7 @@ class Home extends Component {
                 <NavtabTop />
                 <NavtabBottom />
                 <Sort />
+                <Categories />
                 <Listing />          
                 <Footer />
             </div>
@@ -29,4 +32,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default Listings;
