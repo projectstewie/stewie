@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import NavtabTop from "./components/NavtabTop";
 import NavtabBottom from "./components/NavtabBottom";
 import HeroImage from "./components/HeroImage";
+import Footer from "./components/Footer";
 import './App.css';
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
           <NavtabTop />
           <NavtabBottom />
           <HeroImage />
+          <Footer />
 
           {/* <Switch>
             <Route exact path="/" component={Signup} />
