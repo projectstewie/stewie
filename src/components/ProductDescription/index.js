@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-const ProductListing = () => (
+const ProductDescription = () => (
 <div className="site-wrap">
 <div className="site-section">
       <div className="container">
@@ -23,4 +23,4 @@ const ProductListing = () => (
  </div>
 )
 
-export default ProductListing;
+export default ProductDescription;
