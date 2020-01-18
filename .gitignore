@@ -1,3 +1,6 @@
+*.DS_Store
+**/.DS_Store
+
 .env
 
 # Dont commit the node_modules dir - only use package.json and package-lock.json
