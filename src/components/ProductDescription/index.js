@@ -1,13 +1,16 @@
 import React from "react";
 import "./style.css";
+import NavtabBottom from "../NavtabBottom/";
+import NavtabTop from "../NavtabTop/";
 
 const ProductDescription = () => (
+
 <div className="site-wrap">
 <div className="site-section">
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <img src="images/cloth_1.jpg" alt="Image" className="img-fluid"></img>
+            <img src="/images/blog_1.jpg" alt="Image" className="img-fluid"></img>
           </div>
           <div className="col-md-6">
             <h2 className="text-black">Tank Top T-Shirt</h2>
@@ -21,6 +24,8 @@ const ProductDescription = () => (
       </div>
     </div>
  </div>
-)
+ 
+ )
+
 
 export default ProductDescription;

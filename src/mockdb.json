@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "img": "./images/blog_1.jpg",
+        "title": "Baby Stroller",
+        "price": "$15",
+        "description": "Lorem Ipsum"
+    },
+    {
+        "id": 2,
+        "img": "./men.jpg",
+        "title": "Tank Top",
+        "price": "$15",
+        "description": "Lorem Ipsum"
+    },
+    {
+        "id": 3,
+        "img": "./person_1.jpg",
+        "title": "Baby Crib",
+        "price": "$15",
+        "description": "Lorem Ipsum"
+    }
+]
+
