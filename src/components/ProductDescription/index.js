@@ -1,7 +1,5 @@
 import React from "react";
 import "./style.css";
-import NavtabBottom from "../NavtabBottom/";
-import NavtabTop from "../NavtabTop/";
 
 const ProductDescription = () => (
 
