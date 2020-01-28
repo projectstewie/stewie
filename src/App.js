@@ -9,22 +9,22 @@ import Home from "./pages/Home";
 import Listings from "./pages/Listings";
 import './App.css';
 import Pdp from './pages/Pdp';
-import mockdb from '../src/mockdb.json';
+import MockDb from '../src/MockDb.json';
 
 class App extends Component {
 
   state = {
-    mockdb
+    MockDb
   }
 
   
   componentDidMount() {
-  console.log(this.state)
+  console.log("This is from app", this.state)
 
   }
 
   render() {
-    console.log("Hey this works")
+
     return (
       <Router>
         <div>
@@ -33,7 +33,9 @@ class App extends Component {
 
             <Route exact path="/" component={Home} />
             <Route exact path="/listings" component={Listings} />
-            <Route exact path="/listings/:id" component={Pdp} />
+    
+            <Route exact path={"/listing/:listingId"} component={Pdp} />
+
             {/* <Route component={NoMatch} /> */}
             
           </Switch>

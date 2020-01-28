@@ -8,15 +8,36 @@
     },
     {
         "id": 2,
-        "img": "./men.jpg",
+        "img": "./images/blog_1.jpg",
         "title": "Tank Top",
         "price": "$15",
         "description": "Lorem Ipsum"
     },
     {
         "id": 3,
-        "img": "./person_1.jpg",
+        "img": "./images/blog_1.jpg",
         "title": "Baby Crib",
+        "price": "$15",
+        "description": "Lorem Ipsum"
+    },
+    {
+        "id": 4,
+        "img": "./images/blog_1.jpg",
+        "title": "Baby Stroller",
+        "price": "$15",
+        "description": "Lorem Ipsum"
+    },
+    {
+        "id": 5,
+        "img": "./images/blog_1.jpg",
+        "title": "Kid Sandals",
+        "price": "$15",
+        "description": "Lorem Ipsum"
+    },
+    {
+        "id": 6,
+        "img": "./images/blog_1.jpg",
+        "title": "Glasses",
         "price": "$15",
         "description": "Lorem Ipsum"
     }

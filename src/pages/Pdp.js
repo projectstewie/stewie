@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import NavtabTop from "../components/NavtabTop";
 import NavtabBottom from "../components/NavtabBottom";
 import ProductDescription from "../components/ProductDescription";
+// import Categories from "../components/Categories";
 import Footer from "../components/Footer";
 import "../App.css";
 
@@ -11,6 +12,12 @@ class Pdp extends Component {
     //     loggedIn: false,
     //     loading: true
     //     
+    // }
+
+    // componentDidMount() {}
+
+    // handleLinkClick = (event) => {
+    //     console.log("Clicked", event)
     // }
 
     render() {
