@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-// import { Redirect } from 'react-router-dom';
 import NavtabTop from "../components/NavtabTop";
 import NavtabBottom from "../components/NavtabBottom";
-import ProductDescription from "../components/ProductDescription";
-// import Categories from "../components/Categories";
+import ListingComponent from "../components/Listing";
 import Footer from "../components/Footer";
 import "../App.css";
 
-class Pdp extends Component {
+class Listing extends Component {
     // state = {
     //     loggedIn: false,
     //     loading: true
@@ -25,7 +23,7 @@ class Pdp extends Component {
             <div >
                 <NavtabTop />
                 <NavtabBottom />
-                <ProductDescription />       
+                <ListingComponent />       
                 <Footer />
             </div>
 
@@ -34,4 +32,4 @@ class Pdp extends Component {
     }
 }
 
-export default Pdp;
+export default Listing;
