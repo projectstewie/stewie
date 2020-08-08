@@ -8,19 +8,23 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Listings from "./pages/Listings";
 import './App.css';
+import Pdp from './pages/Pdp';
+import MockDb from '../src/MockDb.json';
 
 class App extends Component {
 
   state = {
-
+    MockDb
   }
 
+  
   componentDidMount() {
+  console.log("This is from app", this.state)
 
   }
 
   render() {
-    console.log("Hey this works")
+
     return (
       <Router>
         <div>
@@ -29,7 +33,11 @@ class App extends Component {
 
             <Route exact path="/" component={Home} />
             <Route exact path="/listings" component={Listings} />
+    
+            <Route exact path={"/listing/:listingId"} component={Pdp} />
 
+            {/* <Route component={NoMatch} /> */}
+            
           </Switch>
         </div>
       </Router>
