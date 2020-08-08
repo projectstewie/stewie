@@ -3,31 +3,31 @@ import NavtabTop from "../components/NavtabTop";
 import NavtabBottom from "../components/NavtabBottom";
 import ListingComponent from "../components/Listing";
 import Footer from "../components/Footer";
-import "../App.css";
 
 class Listing extends Component {
-    // state = {
-    //     loggedIn: false,
-    //     loading: true
-    //     
-    // }
 
-    // componentDidMount() {}
+    constructor() {
+        super();
+    }
 
-    // handleLinkClick = (event) => {
-    //     console.log("Clicked", event)
-    // }
+    state = {
+        listing: []
+    }
+
+    componentDidMount = () => {
+        fetch('http://localhost:4000/listings/345234523')
+            .then(res => res.json())
+            .then(item => this.setState({ listing: item }))
+    }
 
     render() {
         return (
             <div >
                 <NavtabTop />
                 <NavtabBottom />
-                <ListingComponent />       
+                <ListingComponent listing={this.state.listing} />
                 <Footer />
             </div>
-
-
         )
     }
 }
