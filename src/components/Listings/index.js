@@ -8,7 +8,6 @@ class Listings extends Component {
     MockDb
   }
 
-
   render() {
     return (
       <div className="row mb-5">
@@ -19,7 +18,6 @@ class Listings extends Component {
                 <a href={"/listing/" + item.id}><img src={item.img} alt="Image placeholder" className="img-fluid"></img></a>
               </figure>
               <div className="block-4-text p-4">
-                {/* <h3><a href={"/pdp"}>{item.title}</a></h3> */}
                 <h3><a href={"/listing/" + item.id}>{item.title}</a></h3>
                 <p className="mb-0">{item.description}</p>
                 <p className="text-primary font-weight-bold">{item.price}</p>
