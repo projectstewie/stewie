@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import NavtabTop from "../components/NavtabTop";
 import NavtabBottom from "../components/NavtabBottom";
 import Footer from "../components/Footer";
-import Listing from "../components/Listing";
+import ListingsComponent from "../components/Listings";
 import Sort from "../components/Sort";
 import Categories from "../components/Categories";
 import Filter from "../components/Filter";
@@ -23,7 +23,7 @@ class Listings extends Component {
                 <NavtabBottom />
                 <Sort />
                 <Categories />
-                <Listing />          
+                <ListingsComponent />          
                 <Footer />
             </div>
 
