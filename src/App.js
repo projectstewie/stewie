@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import Footer from "./components/Footer";
 // import Listings from "./components/Listings";
 import Home from "./pages/Home";
+import Product from "./pages/Product";
 import Listings from "./pages/Listings";
 import './App.css';
 
@@ -29,6 +30,7 @@ class App extends Component {
 
             <Route exact path="/" component={Home} />
             <Route exact path="/listings" component={Listings} />
+            <Route exact path="/product" component={Product} />
 
           </Switch>
         </div>
