@@ -9,6 +9,30 @@ import "../App.css";
 
 class Listings extends Component {
 
+    constructor() {
+        super();
+    }
+
+    state = {
+        listings: []
+    }
+
+    componentDidMount = () => {
+        // This endpoint will change
+        fetch('http://localhost:4000/listings/123')
+            .then(res => res.json())
+            // .then(data => 
+            //     data.map(item => (
+            //         {
+            //             heading: item.heading,
+            //             description:item.description,
+            //             price:item.price,
+            //             selling_id:item.selling_id
+            //         }
+            //     )))
+            .then(item => this.setState({ listings: item }))
+    }
+
     render() {
         return (
             <div >
@@ -16,7 +40,7 @@ class Listings extends Component {
                 <NavtabBottom />
                 <Sort />
                 <Categories />
-                <ListingsComponent />          
+                <ListingsComponent listings={this.state.listings}/>
                 <Footer />
             </div>
         )

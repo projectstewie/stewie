@@ -1,34 +1,25 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
-import MockDb from "../../../src/MockDb.json";
 
-class Listings extends Component {
+const Listings = (props) => (
 
-  state = {
-    MockDb
-  }
+  <div className="row mb-5">
 
-  render() {
-    return (
-      <div className="row mb-5">
-        {this.state.MockDb.map(item =>
-          <div className="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-            <div className="block-4 text-center border">
-              <figure className="block-4-image">
-                <a href={"/listing/" + item.id}><img src={item.img} alt="Image placeholder" className="img-fluid"></img></a>
-              </figure>
-              <div className="block-4-text p-4">
-                <h3><a href={"/listing/" + item.id}>{item.title}</a></h3>
-                <p className="mb-0">{item.description}</p>
-                <p className="text-primary font-weight-bold">{item.price}</p>
-              </div>
-            </div>
+      <div className="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+        <div className="block-4 text-center border">
+          <figure className="block-4-image">
+          <img src="./images/blog_1.jpg" className='img-fluid'></img>
+            {/* <a href={"/listing/" + props.id}><img src={item.img} alt="Image placeholder" className="img-fluid"></img></a> */}
+          </figure>
+          <div className="block-4-text p-4">
+            {/* <h3><a href={"/listing/" + item.id}>{item.title}</a></h3> */}
+            <p className>{props.listings.heading}</p>
+            <p className="mb-0">{props.listings.description}</p>
+            <p className="text-primary font-weight-bold">{props.listings.price}</p>
           </div>
-
-        )}
+        </div>
       </div>
-    )
-  }
-}
+  </div>
+)
 
 export default Listings;
