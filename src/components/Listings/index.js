@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
-import MockDb from "../../../src/MockDb.json";
+import MockDb from "../../../src/mockdb.json";
 
 class Listings extends Component {
 
