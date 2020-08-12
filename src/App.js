@@ -6,13 +6,16 @@ import Listing from "./pages/Listing";
 import './App.css';
 class App extends Component {
 
+
+
   render() {
     return (
       <Router>
         <div>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/listings/" component={Listings} />
+            {/* put exact back in path */}
+            <Route path="/listings/" component={Listings} />
             <Route exact path={"/listing/:listingId"} component={Listing} />
           </Switch>
         </div>
