@@ -9,10 +9,6 @@ import "../App.css";
 
 class Listings extends Component {
 
-    constructor() {
-        super();
-    }
-
     state = {
         listings: []
     }

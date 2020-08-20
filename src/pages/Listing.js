@@ -10,10 +10,6 @@ import "../fonts/icomoon/style.css";
 
 class Listing extends Component {
 
-    constructor() {
-        super();
-    }
-
     state = {
         listing: []
     }

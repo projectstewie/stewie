@@ -11,7 +11,7 @@ const HeroImage = () => (
           <div className="intro-text text-center text-md-left">
             <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla. </p>
             <p>
-              <a href="#" className="btn btn-sm btn-primary">Shop Now</a>
+              {/* <a href="#" className="btn btn-sm btn-primary">Shop Now</a> */}
             </p>
           </div>
         </div>
