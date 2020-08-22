@@ -3,12 +3,13 @@ import "./style.css";
 
 const Listing = (props) => (
 
-      <div className="site-wrap">
+  <div className="site-wrap">
+    <a href='/listings'>Back to Listings</a>
         <div className="site-section">
           <div className="container">
             <div className="row">
               <div className="col-md-6">
-                <img src="/images/blog_1.jpg" alt="Image" className="img-fluid"></img>
+                <img src="/images/blog_1.jpg" alt="clothing" className="img-fluid"></img>
               </div>
               <div className="col-md-6">
                 <p className="text-primary">{props.listing.heading}</p>
