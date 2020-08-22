@@ -3,7 +3,8 @@ import "./style.css";
 
 const Listing = (props) => (
 
-      <div className="site-wrap">
+  <div className="site-wrap">
+    <a href='/listings'>Back to Listings</a>
         <div className="site-section">
           <div className="container">
             <div className="row">

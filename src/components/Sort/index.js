@@ -11,20 +11,20 @@ const Sort = () => (
           Latest
         </button>
         <div className="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-          <a className="dropdown-item" href="#">Men</a>
+          {/* <a className="dropdown-item" href="#">Men</a>
           <a className="dropdown-item" href="#">Women</a>
-          <a className="dropdown-item" href="#">Children</a>
+          <a className="dropdown-item" href="#">Children</a> */}
         </div>
       </div>
       <div className="btn-group">
         <button type="button" className="btn btn-secondary btn-sm dropdown-toggle" id="dropdownMenuReference" data-toggle="dropdown">Reference</button>
         <div className="dropdown-menu" aria-labelledby="dropdownMenuReference">
-          <a className="dropdown-item" href="#">Relevance</a>
+          {/* <a className="dropdown-item" href="#">Relevance</a>
           <a className="dropdown-item" href="#">Name, A to Z</a>
-          <a className="dropdown-item" href="#">Name, Z to A</a>
+          <a className="dropdown-item" href="#">Name, Z to A</a> */}
           <div className="dropdown-divider"></div>
-          <a className="dropdown-item" href="#">Price, low to high</a>
-          <a className="dropdown-item" href="#">Price, high to low</a>
+          {/* <a className="dropdown-item" href="#">Price, low to high</a>
+          <a className="dropdown-item" href="#">Price, high to low</a> */}
         </div>
       </div>
     </div>
