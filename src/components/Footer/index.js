@@ -9,14 +9,14 @@ const Footer = () => (
           <div className="col-lg-6 mb-5 mb-lg-0">
             <div className="row">
               <div className="col-md-12">
-                {/* <h3 className="footer-heading mb-4">Navigations</h3> */}
+                <h3 className="footer-heading mb-4">Navigations</h3>
               </div>
               <div className="col-md-6 col-lg-4">
                 <ul className="list-unstyled">
-                  {/* <li><a href="#">Sell online</a></li>
+                   <li><a href="#">Sell online</a></li>
                   <li><a href="#">Features</a></li>
                   <li><a href="#">Shopping cart</a></li>
-                  <li><a href="#">Store builder</a></li> */}
+                  <li><a href="#">Store builder</a></li> 
                 </ul>
               </div>
               <div className="col-md-6 col-lg-4">
