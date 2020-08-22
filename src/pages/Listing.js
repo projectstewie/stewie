@@ -10,6 +10,9 @@ import "../images/hero_1.jpg";
 
 class Listing extends Component {
 
+    constructor(props) {
+    super(props);
+
     this.state = {
         listing: [
         {
@@ -28,7 +31,8 @@ class Listing extends Component {
         }
     ]
     };
-}
+};
+
     componentDidMount = () => {
         fetch('http://localhost:4000/listings/345234523')
             .then(res => res.json())
