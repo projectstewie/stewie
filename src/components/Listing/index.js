@@ -19,21 +19,21 @@ const Listing = (props) => (
 
                 <div className="mb-1 d-flex">
 
-                <label for="option-sm" className="d-flex mr-3 mb-3">
-                <div className="d-inline-block mr-2" style={{top:"-2px", position:"relative"}}><input type="radio" id="option-sm" name="shop-sizes"></input></div> <div class="d-inline-block text-black">Small</div>
-              </label>
+                <div htmlFor="option-sm" className="d-flex mr-3 mb-3">
+                <div className="d-inline-block mr-2" style={{top:"-2px", position:"relative"}}><input type="radio" id="option-sm" name="shop-sizes"></input></div> <div className="d-inline-block text-black">Small</div>
+              </div>
 
-              <label for="option-md" class="d-flex mr-3 mb-3">
-                <div className="d-inline-block mr-2" style={{top:"-2px", position: "relative"}}><input type="radio" id="option-md" name="shop-sizes"></input></div> <div class="d-inline-block text-black">Medium</div>
-              </label>
+              <div htmlFor="option-md" className="d-flex mr-3 mb-3">
+                <div className="d-inline-block mr-2" style={{top:"-2px", position: "relative"}}><input type="radio" id="option-md" name="shop-sizes"></input></div> <div className="d-inline-block text-black">Medium</div>
+              </div>
 
-              <label for="option-lg" className="d-flex mr-3 mb-3">
+              <div htmlFor="option-lg" className="d-flex mr-3 mb-3">
                 <div className="d-inline-block mr-2" style={{top:"-2px", position: "relative"}}><input type="radio" id="option-lg" name="shop-sizes"></input></div> <div className="d-inline-block text-black">Large</div>
-              </label>
+              </div>
 
-              <label for="option-xl" className="d-flex mr-3 mb-3">
-                <div className="d-inline-block mr-2" style={{top:"-2px", position: "relative"}}><input type="radio" id="option-xl" name="shop-sizes"></input></div> <div class="d-inline-block text-black"> Extra Large</div>
-              </label>
+              <div htmlFor="option-xl" className="d-flex mr-3 mb-3">
+                <div className="d-inline-block mr-2" style={{top:"-2px", position: "relative"}}><input type="radio" id="option-xl" name="shop-sizes"></input></div> <div className="d-inline-block text-black"> Extra Large</div>
+              </div>
 
 
             </div>
