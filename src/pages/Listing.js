@@ -14,22 +14,7 @@ class Listing extends Component {
     super(props);
 
     this.state = {
-        listing: [
-        {
-            name: "Blue T-shirt",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, vitae, explicabo? Incidunt facere, natus soluta dolores iusto! Molestiae expedita veritatis nesciunt doloremque sint asperiores fuga voluptas, distinctio, aperiam, ratione dolore.",
-            color: "blue",
-            size: "S", 
-            price: "$15"
-        },
-        {
-            name: "Running shoes",
-            description: "Adidas Running Shoes",
-            color: "dark blue",
-            size: "8",
-            price: "$54"
-        }
-    ]
+        listing: []
     };
 };
 
@@ -39,12 +24,19 @@ class Listing extends Component {
             .then(item => this.setState({ listing: item }))
     }
 
+    displayPhotos = () => {
+       return this.state.listing.images.map(image => {
+           return image.url;      
+        })
+    }
+    
     render() {
+        console.log(this.state)
         return (
             <div >
                 <NavtabTop />
                 <NavtabBottom />
-                <ListingComponent listing={this.state.listing} />
+                <ListingComponent listing={this.state.listing} photos={this.displayPhotos}/>
                 <Footer />
             </div>
         )

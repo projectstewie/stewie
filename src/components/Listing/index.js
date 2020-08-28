@@ -1,20 +1,22 @@
 import React from "react";
 import "./style.css";
 
-const Listing = (props) => (
 
-  <div className="site-wrap">
-    <a href='/listings'>Back to Listings</a>
+const Listing = (props) => {
+  
+  return(
+    <div className="site-wrap">
+      <a href='/listings'>Back to Listings</a>
         <div className="site-section">
           <div className="container">
             <div className="row">
               <div className="col-md-6">
-                <img src="/images/cloth_3.jpg" alt="Image" className="img-fluid"></img>
+                <img src={props.images} alt="Image" className="img-fluid"></img>
               </div>
               <div className="col-md-6">
-                <h2 className="text-black">{props.listing[0].name}</h2>
-                <p>{props.listing[0].description}</p>
-                <p className="text-primary h4">{props.listing[0].price}</p>
+                <h2 className="text-black">{props.listing.heading}</h2>
+                <p>{props.listing.description}</p>
+                <p className="text-primary h4">{props.listing.price}</p>
 
 
                 <div className="mb-1 d-flex">
@@ -62,6 +64,7 @@ const Listing = (props) => (
           </div>
         </div>
       </div>
-)
+  )
+}
 
 export default Listing;
