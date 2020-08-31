@@ -11,12 +11,12 @@ import "../images/hero_1.jpg";
 class Listing extends Component {
 
     constructor(props) {
-    super(props);
+        super(props);
 
-    this.state = {
-        listing: []
+        this.state = {
+            listing: []
+        };
     };
-};
 
     componentDidMount = () => {
         fetch('http://localhost:4000/listings/345234523')
@@ -24,19 +24,13 @@ class Listing extends Component {
             .then(item => this.setState({ listing: item }))
     }
 
-    displayPhotos = () => {
-       return this.state.listing.images.map(image => {
-           return image.url;      
-        })
-    }
-    
     render() {
         console.log(this.state)
         return (
             <div >
                 <NavtabTop />
                 <NavtabBottom />
-                <ListingComponent listing={this.state.listing} photos={this.displayPhotos}/>
+                <ListingComponent listing={this.state.listing} />
                 <Footer />
             </div>
         )
