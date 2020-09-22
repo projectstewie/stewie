@@ -21,46 +21,23 @@ const Listing = ({ listing }) => {
               <h2 className="text-black">{heading}</h2>
               <p>{description}</p>
               <p className="text-primary h4">{price}</p>
-
-
               <div className="mb-1 d-flex">
 
-                <label for="option-sm" className="d-flex mr-3 mb-3">
-                  <div className="d-inline-block mr-2" style={{ top: "-2px", position: "relative" }}><input type="radio" id="option-sm" name="shop-sizes"></input></div> <div class="d-inline-block text-black">Small</div>
+                <label htmlFor="option-sm" className="d-flex mr-3 mb-3">
+                  <div className="d-inline-block mr-2" style={{ top: "-2px", position: "relative" }}><input type="radio" id="option-sm" name="shop-sizes"></input></div> <div className="d-inline-block text-black">Small</div>
                 </label>
 
-                <label for="option-md" class="d-flex mr-3 mb-3">
-                  <div className="d-inline-block mr-2" style={{ top: "-2px", position: "relative" }}><input type="radio" id="option-md" name="shop-sizes"></input></div> <div class="d-inline-block text-black">Medium</div>
+                <label htmlFor="option-md" class="d-flex mr-3 mb-3">
+                  <div className="d-inline-block mr-2" style={{ top: "-2px", position: "relative" }}><input type="radio" id="option-md" name="shop-sizes"></input></div> <div className="d-inline-block text-black">Medium</div>
                 </label>
 
-                <label for="option-lg" className="d-flex mr-3 mb-3">
+                <label htmlFor="option-lg" className="d-flex mr-3 mb-3">
                   <div className="d-inline-block mr-2" style={{ top: "-2px", position: "relative" }}><input type="radio" id="option-lg" name="shop-sizes"></input></div> <div className="d-inline-block text-black">Large</div>
                 </label>
 
-                <label for="option-xl" className="d-flex mr-3 mb-3">
-                  <div className="d-inline-block mr-2" style={{ top: "-2px", position: "relative" }}><input type="radio" id="option-xl" name="shop-sizes"></input></div> <div class="d-inline-block text-black"> Extra Large</div>
+                <label htmlFor="option-xl" className="d-flex mr-3 mb-3">
+                  <div className="d-inline-block mr-2" style={{ top: "-2px", position: "relative" }}><input type="radio" id="option-xl" name="shop-sizes"></input></div> <div className="d-inline-block text-black"> Extra Large</div>
                 </label>
-//                 <div htmlFor="option-sm" className="d-flex mr-3 mb-3">
-//                 <div className="d-inline-block mr-2" style={{top:"-2px", position:"relative"}}><input type="radio" id="option-sm" name="shop-sizes"></input></div> <div className="d-inline-block text-black">Small</div>
-//               </div>
-
-//               <div htmlFor="option-md" className="d-flex mr-3 mb-3">
-//                 <div className="d-inline-block mr-2" style={{top:"-2px", position: "relative"}}><input type="radio" id="option-md" name="shop-sizes"></input></div> <div className="d-inline-block text-black">Medium</div>
-//               </div>
-
-//               <div htmlFor="option-lg" className="d-flex mr-3 mb-3">
-//                 <div className="d-inline-block mr-2" style={{top:"-2px", position: "relative"}}><input type="radio" id="option-lg" name="shop-sizes"></input></div> <div className="d-inline-block text-black">Large</div>
-//               </div>
-
-//               <div htmlFor="option-xl" className="d-flex mr-3 mb-3">
-//                 <div className="d-inline-block mr-2" style={{top:"-2px", position: "relative"}}><input type="radio" id="option-xl" name="shop-sizes"></input></div> <div className="d-inline-block text-black"> Extra Large</div>
-//               </div>
-
-
-//             </div>
-            
-//             <div className="mb-5">
-
 
               </div>
 
@@ -80,9 +57,7 @@ const Listing = ({ listing }) => {
 
                 </div>
               </div>
-
-
-              <p><a href="cart.html" className="buy-now btn btn-sm btn-primary">Add To Cart</a></p>
+              <p><a href="/cart" className="buy-now btn btn-sm btn-primary">Add To Cart</a></p>
             </div>
           </div>
         </div>
