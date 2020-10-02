@@ -1,12 +1,28 @@
 import React from "react";
 import "./style.css";
+import ImageGallery from 'react-image-gallery';
+
+// const imagez = [
+//   {
+//     original: 'https://picsum.photos/id/1018/1000/600/',
+//     thumbnail: 'https://picsum.photos/id/1018/250/150/',
+//   },
+//   {
+//     original: 'https://picsum.photos/id/1015/1000/600/',
+//     thumbnail: 'https://picsum.photos/id/1015/250/150/',
+//   },
+//   {
+//     original: 'https://picsum.photos/id/1019/1000/600/',
+//     thumbnail: 'https://picsum.photos/id/1019/250/150/',
+//   },
+// ];
 
 const Listing = ({ listing }) => {
 
   const { heading, description, images, price } = listing;
 
-  const imgArr = images && images.map(image =>
-    <img key={image} src={image} alt="Image" className="img-fluid"></img>);
+  let imgArr = []
+  if (images) { imgArr = images }
 
   return (
     <div className="site-wrap">
@@ -15,7 +31,9 @@ const Listing = ({ listing }) => {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              {imgArr}
+              <ImageGallery
+                items={imgArr}
+              />
             </div>
             <div className="col-md-6">
               <h2 className="text-black">{heading}</h2>
@@ -40,26 +58,14 @@ const Listing = ({ listing }) => {
                 <label for="option-xl" className="d-flex mr-3 mb-3">
                   <div className="d-inline-block mr-2" style={{ top: "-2px", position: "relative" }}><input type="radio" id="option-xl" name="shop-sizes"></input></div> <div class="d-inline-block text-black"> Extra Large</div>
                 </label>
-//                 <div htmlFor="option-sm" className="d-flex mr-3 mb-3">
-//                 <div className="d-inline-block mr-2" style={{top:"-2px", position:"relative"}}><input type="radio" id="option-sm" name="shop-sizes"></input></div> <div className="d-inline-block text-black">Small</div>
-//               </div>
+                <div htmlFor="option-sm" className="d-flex mr-3 mb-3">
 
-//               <div htmlFor="option-md" className="d-flex mr-3 mb-3">
-//                 <div className="d-inline-block mr-2" style={{top:"-2px", position: "relative"}}><input type="radio" id="option-md" name="shop-sizes"></input></div> <div className="d-inline-block text-black">Medium</div>
-//               </div>
-
-//               <div htmlFor="option-lg" className="d-flex mr-3 mb-3">
-//                 <div className="d-inline-block mr-2" style={{top:"-2px", position: "relative"}}><input type="radio" id="option-lg" name="shop-sizes"></input></div> <div className="d-inline-block text-black">Large</div>
-//               </div>
-
-//               <div htmlFor="option-xl" className="d-flex mr-3 mb-3">
-//                 <div className="d-inline-block mr-2" style={{top:"-2px", position: "relative"}}><input type="radio" id="option-xl" name="shop-sizes"></input></div> <div className="d-inline-block text-black"> Extra Large</div>
-//               </div>
+                </div>
 
 
-//             </div>
-            
-//             <div className="mb-5">
+              </div>
+
+              <div className="mb-5">
 
 
               </div>
