@@ -2,21 +2,6 @@ import React from "react";
 import "./style.css";
 import ImageGallery from 'react-image-gallery';
 
-// const imagez = [
-//   {
-//     original: 'https://picsum.photos/id/1018/1000/600/',
-//     thumbnail: 'https://picsum.photos/id/1018/250/150/',
-//   },
-//   {
-//     original: 'https://picsum.photos/id/1015/1000/600/',
-//     thumbnail: 'https://picsum.photos/id/1015/250/150/',
-//   },
-//   {
-//     original: 'https://picsum.photos/id/1019/1000/600/',
-//     thumbnail: 'https://picsum.photos/id/1019/250/150/',
-//   },
-// ];
-
 const Listing = ({ listing }) => {
 
   const { heading, description, images, price } = listing;
@@ -32,7 +17,7 @@ const Listing = ({ listing }) => {
           <div className="row">
             <div className="col-md-6">
               <ImageGallery
-                items={imgArr}
+                items={imgArr} showPlayButton={false}
               />
             </div>
             <div className="col-md-6">
