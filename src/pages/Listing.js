@@ -23,14 +23,15 @@ class Listing extends Component {
             .then(res => res.json())
             .then(item => this.setState({ listing: item }))
     }
-
     render() {
+
+        
         console.log(this.state)
         return (
             <div >
                 <NavtabTop />
                 <NavtabBottom />
-                <ListingComponent listing={this.state.listing} />
+                <ListingComponent listing={this.state.listing}/>
                 <Footer />
             </div>
         )

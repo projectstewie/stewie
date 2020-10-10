@@ -1,12 +1,13 @@
 import React from "react";
 import "./style.css";
+import ImageGallery from 'react-image-gallery';
 
 const Listing = ({ listing }) => {
 
   const { heading, description, images, price } = listing;
 
-  const imgArr = images && images.map(image =>
-    <img key={image} src={image} alt="Image" className="img-fluid"></img>);
+  let imgArr = []
+  if (images) { imgArr = images }
 
   return (
     <div className="site-wrap">
@@ -15,7 +16,9 @@ const Listing = ({ listing }) => {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              {imgArr}
+              <ImageGallery
+                items={imgArr} showPlayButton={false}
+              />
             </div>
             <div className="col-md-6">
               <h2 className="text-black">{heading}</h2>
@@ -39,7 +42,7 @@ const Listing = ({ listing }) => {
                   <div className="d-inline-block mr-2" style={{ top: "-2px", position: "relative" }}><input type="radio" id="option-xl" name="shop-sizes"></input></div> <div className="d-inline-block text-black"> Extra Large</div>
                 </label>
 
-              </div>
+                </div>
 
               <div className="mb-5">
 
