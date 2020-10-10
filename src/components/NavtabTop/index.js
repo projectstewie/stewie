@@ -18,7 +18,7 @@ const NavtabTop = () => (
 
             <div className="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
               <div className="site-logo">
-                <a href="index.html" className="js-logo-clone">Stewie</a>
+                <a href="/" className="js-logo-clone">Stewie</a>
               </div>
             </div>
 
@@ -28,7 +28,7 @@ const NavtabTop = () => (
                   <li><a href="#"><span className="icon icon-person"></span></a></li> 
                    <li><a href="#"><span className="icon icon-heart-o"></span></a></li>
                   <li>
-                    <a href="cart.html" className="site-cart">
+                    <a href="/cart" className="site-cart">
                       <span className="icon icon-shopping_cart"></span>
                       <span className="count">2</span>
                     </a>
