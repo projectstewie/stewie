@@ -30,7 +30,7 @@ class Listings extends Component {
                 <NavtabBottom />
                 <Sort />
                 <Categories />
-                <ListingsComponent listings={this.state.listings.users}/>
+                <ListingsComponent listings={this.state.listings.items}/>
                 <Footer />
             </div>
         )
