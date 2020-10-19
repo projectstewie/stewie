@@ -9,6 +9,20 @@ import "../css/style.css";
 
 class Cart extends Component {
 
+    // constructor(props) {
+    //     super(props);
+    //     this.handleClick = this.handleClick.bind(this);
+    //   }
+   
+    //   handleClick() {
+    //     console.log('Click happened');
+    //   }
+
+//    handleClick(e) {
+//         e.preventDefault();
+//         console.log('The link was clicked.');
+//       }
+
     render() {
         // console.log(this.state)
         return (

@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+// import "./func.js";
 
 const CartComponent = () => (
 
@@ -52,8 +53,11 @@ const CartComponent = () => (
                   </td>
 
                   <td>$49.00</td>
-                  <td><a href="#" className="btn btn-primary btn-sm">X</a></td>
+                  <td><button className="btn btn-primary btn-sm">X</button></td>
+                  {/* <td><button onClick={this.handleClick} className="btn btn-primary btn-sm">X</button></td> */}
                 </tr>
+
+               
 
                 <tr>
                   <td className="product-thumbnail">
