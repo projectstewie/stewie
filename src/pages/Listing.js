@@ -19,7 +19,7 @@ class Listing extends Component {
     };
 
     componentDidMount = () => {
-        fetch('http://localhost:4000/listings/345234523')
+        fetch('http://localhost:4000/listing/345234523')
             .then(res => res.json())
             .then(item => this.setState({ listing: item }))
     }
