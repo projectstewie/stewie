@@ -11,7 +11,7 @@ const NavtabBottom = () => (
             <li className="has-children active">
               <a href={"/listings"}>BUY</a>
               <ul className="dropdown">
-                <li><a href={"#"}>Clothing and Accessories</a></li>
+                <li><a href={"/clothing"}>Clothing and Accessories</a></li>
                 <li><a href={"#"}>Bath and Potty</a></li>
                 <li><a href={"#"}>Bedding and Decor</a></li>
                 <li><a href={"#"}>Toys and Learning</a></li>

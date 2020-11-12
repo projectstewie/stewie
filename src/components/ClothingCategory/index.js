@@ -1,12 +1,14 @@
 import React from "react";
-import "./style.css";
 import ImageGallery from 'react-image-gallery';
 
-const Listings = ({ listings }) => {
+const ClothingCategory = ({ listings }) => {
 
-  return (
+    const clothing = listings && listings.filter(item => item.category_id === '1')
+    console.log(clothing);
+    
+    return (
     <div className="row mb-5">
-      {listings && listings.map(item =>
+      {clothing && clothing.map(item =>
         
 
         <div key={item.id} className="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
@@ -30,4 +32,4 @@ const Listings = ({ listings }) => {
 }
 
 
-export default Listings;
+export default ClothingCategory;

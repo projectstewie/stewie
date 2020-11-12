@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Listings from "./pages/Listings";
 import Listing from "./pages/Listing";
 import Cart from "./pages/Cart";
+import Clothing from "./pages/Clothing";
 import './App.css';
 class App extends Component {
 
@@ -17,6 +18,7 @@ class App extends Component {
             <Route path="/listings/" component={Listings} />
             <Route exact path={"/listing/:listingId"} component={Listing} />
             <Route path="/cart/" component={Cart} />
+            <Route path="/clothing" component={Clothing} />
           </Switch>
         </div>
       </Router>
