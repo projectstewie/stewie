@@ -4,13 +4,11 @@ import ImageGallery from 'react-image-gallery';
 const ClothingCategory = ({ listings }) => {
 
     const clothing = listings && listings.filter(item => item.category_id === '1')
-    console.log(clothing);
     
     return (
     <div className="row mb-5">
       {clothing && clothing.map(item =>
         
-
         <div key={item.id} className="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
           <div className="block-4 text-center border">
 
